@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../images/bg.jpg");
+    /*https://www.google.com/search?q=crystal+wallpaper&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjctrr_8tfVAhUq34MKHRIVBj4Q_AUICigB&biw=1366&bih=638#imgrc=S6uIbuiSbG9GOM:*/
+    
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.box{
+	background-color: #FFDEAD;
+	height: 90%;
+	width: 90%;
+	margin: 5%;
+}
