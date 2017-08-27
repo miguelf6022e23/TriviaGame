@@ -20,7 +20,15 @@ body, html {
 
 .box{
 	background-color: #FFDEAD;
-	height: 90%;
+	/*height: 90%;*/
 	width: 90%;
 	margin: 5%;
+	overflow: auto;
+}
+
+h1, h2, div{
+	text-align: center;
+}
+p{
+	text-align: left;
 }
