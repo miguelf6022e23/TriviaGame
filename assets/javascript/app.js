@@ -18,7 +18,7 @@ var reset = function(){
 		time--
 		$("#time").html(time);
 		if (time<1){
-			$("#q").html("Wrong!")
+			$("#q").html("Times up! The Answer was: "+ question[question.answer])
 			wrong++
 			$(":button").hide();
 			clearInterval(int)
@@ -48,7 +48,10 @@ var play = function(){
 		$("#q").html("Correct!")
 		right++
 	} else{
-		$("#q").html("Wrong!")
+		$("#q").html("Wrong! The Answer was: "+ question[question.answer])
 		wrong++
 	}
+	$(":button").hide();
+	clearInterval(int)
+	setTimeout(reset,2000)
 }
