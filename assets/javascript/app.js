@@ -17,6 +17,13 @@ var reset = function(){
 	int = setInterval(function(){
 		time--
 		$("#time").html(time);
+		if (time<1){
+			$("#q").html("Wrong!")
+			wrong++
+			$(":button").hide();
+			clearInterval(int)
+			setTimeout(reset,2000)
+		}
 	},1000)
 	
 	disp();
@@ -44,6 +51,4 @@ var play = function(){
 		$("#q").html("Wrong!")
 		wrong++
 	}
-	$(":button").hide();
-	setTimeout(reset,2000)
 }
